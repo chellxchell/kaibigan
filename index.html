@@ -10,24 +10,33 @@
     </head>
 
     <body>
-        <!-- HEADER -->
-        <div class="header">
-            <a href="index.html"><img class="header-icon" src="photos/kbg_copy.png"></a>
-            <a class="active" href="#">Home</a>
-            <a href="about.html">About</a>
-            <a href="events.html">Events</a>
-            <a href="exec.html">Exec</a>
-            <a href="contact.html">Contact</a>
+        <!-- NAVIGATION -->
+        <div class="header flexCenter">
+            <a href="index.html"><img class="header__icon" src="photos/kbg_copy.png"></a>
+            <a class="header__item active" href="#">Home</a>
+            <a class="header__item" href="events.html">Events</a>
+            <a class="header__item" href="exec.html">Exec</a>
+            <a class="header__item" href="contact.html">Contact</a>
         </div>
 
         <!-- LANDING PAGE -->
-        <div class="landing-cont">
-            <div class="title-cont">
-                <h1 class="h1-title">Kaibigan</h1>
-                <h2 class="h2-title">The Tagalog word for friend</h2>
-                <a href="about.html"><button class="landing-button">Learn More</button></a>
+        <div class="landing flexCenter">
+            <div class="intro flexCenter">
+                <h1 class="intro__title">Kaibigan</h1>
+                <h2 class="intro__subtitle">The Tagalog word for friend</h2>
+                <!-- <a href="about.html"><button class="landing-button">Learn More</button></a> -->
             </div>
         </div>
+
+        <div class="about flexCenter flexColumn">
+                <h3 class="about__title">WHO WE ARE</h3>
+                <p class="about__info">
+                    Kaibigan promotes Philippine culture through education and exposure while creating an inclusive, reliable, safe, and supportive community to all Northwestern students.
+                    We engage in a variety of fundraising, education, and social events.
+                </p>
+            </div>
+        </div>
+        
     </body>
 
     <!-- IMPORT JAVASCRIPT -->

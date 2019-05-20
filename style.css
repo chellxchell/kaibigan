@@ -1,73 +1,68 @@
 html{
-    height:100%;
-}
-body{
     font-family: "Open Sans";
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexColumn{
+    flex-direction: column;
 }
 
 /* ---------------HEADER -------------------*/
 .header {
+    justify-content: flex-end;
     background-color: #70abaf;
-    overflow: hidden;
-    position:absolute;
+    position: fixed;
+    height: 60px;
     width:100%;
-    z-index:99;
-    padding:20px 25px 20px 10px;
-    text-align:right;
+    z-index: 99;
 }
-  .header a {
+
+.header__icon{
+    width:20px;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+}
+.header__item {
     color: white;
-    text-align: center;
-    padding: 0px 10px 0px 10px;
-    font-size:18px;
-    font-family: "Open Sans";
+    padding: 0px 20px 0px 0px;
+    font-size: 18px;
 }
-  .header a:hover, .header a.active{
+.header__item:hover, .active{
     color:#a2cecd;
     text-decoration: none;
 }
-.header-icon{
-    width:20px;
-    float:left;
-    margin-left:10px;
-}
+
 
 /* ---------------LANDING PAGE -------------------*/
-.landing-cont{
+.landing{
     background: linear-gradient( rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.7) ),url("photos/cover.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.title-cont{
-    display: flex;
+.intro{
     flex-direction:column;
-    align-items: center;
-    justify-content:center;
 }
-.h1-title{
+.intro__title{
     font-size:150px;
-    /* color:white; */
     color:white;
     filter: brightness(100%)!important;
 }
-.h2-title{
+.intro__subtitle{
     color:white;
     opacity:1;
     line-height:0.5;
     height:60px;
     font-size:48px;
 }
-.h3-title{
-    color:black;
-    font-size:45px;
-}
 
-.landing-button{
+/* .landing-button{
     height:50px;
     width:150px;
     font-size:20px;
@@ -75,27 +70,22 @@ body{
     border-radius:20px;
     background-color: #70abaf;
     border:none;
-}
+} */
 
 
 /* ---------------ABOUT PAGE -------------------*/
-.about-cont{
-    height:100vh;
-    display: flex;
+.about{
+    height:300px;
 }
-.about-img{
-    padding-top:100px;
-    opacity:0.8;
-    filter: brightness(90%);
+.about__title{
+    font-size:45px;
 }
-.about-row{
-    display: flex;
-    justify-content:center;
-}
-.about-descrip{
+
+.about__info{
     font-size: 20px;
     margin:10px 20% 10px 20%;
 }
+
 /* ---------------EVENTS -------------------*/
 .events-cont{
     padding-top:70px;
